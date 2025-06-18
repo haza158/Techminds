@@ -1,0 +1,155 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #eaf6ff;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00C853; /* Green */
+    border: 2px solid #00C853;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #00C853;
+    color: white;
+}
+
+nav ul li a.active {
+    background-color: #00C853;
+    color: white;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    color: green;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.hero-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    background-color: #2874A6; /* Dark Blue Box */
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.hero-text h2 {
+    color: #00C853; /* Bright Green */
+    font-size: 28px;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+}
+
+.cta-button {
+    background-color: #00C853;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+}
+
+.hero-image img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100%;
+        background-color: white;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 60px 20px;
+        transition: right 0.3s ease;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    nav ul li a {
+        color: #00C853;
+        border: 2px solid #00C853;
+        padding: 10px 20px;
+        border-radius: 30px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul.show {
+        right: 0;
+    }
+
+    .hero-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 80%;
+        margin-top: 1.5rem;
+    }
+}
