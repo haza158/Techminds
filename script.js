@@ -1,8 +1,4 @@
-function toggleMenu() {
-    var navLinks = document.getElementById('navLinks');
-    if (navLinks.style.display === 'block') {
-        navLinks.style.display = 'none';
-    } else {
-        navLinks.style.display = 'block';
-    }
+function openMenu() {
+    const menu = document.querySelector('nav ul');
+    menu.classList.toggle('show');
 }
