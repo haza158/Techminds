@@ -9,10 +9,11 @@
 }
 
 body {
-    background-color: #56CCF2; /* Light blue */
+    background-color: #56CCF2;
     color: white;
 }
 
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -36,13 +37,49 @@ body {
 .menu-icon {
     font-size: 30px;
     cursor: pointer;
-    display: block;
 }
 
-.nav-links {
-    display: none; /* You can add functionality later */
+/* Side Menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease;
+    z-index: 999;
 }
 
+.side-menu ul {
+    list-style: none;
+    padding: 50px 20px;
+}
+
+.side-menu ul li {
+    margin: 20px 0;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: green;
+    border: 2px solid green;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.close-icon {
+    font-size: 30px;
+    text-align: right;
+    padding: 20px;
+    cursor: pointer;
+    color: green;
+}
+
+/* Hero Section */
 .hero {
     text-align: center;
     padding: 2rem 1rem;
@@ -79,14 +116,5 @@ body {
 @media(min-width: 768px) {
     .menu-icon {
         display: none;
-    }
-
-    .nav-links {
-        display: flex;
-        list-style: none;
-    }
-
-    .nav-links li {
-        margin-left: 20px;
     }
 }
