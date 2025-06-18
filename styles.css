@@ -37,9 +37,27 @@ body {
 .menu-icon {
     font-size: 30px;
     cursor: pointer;
+    display: block;
 }
 
-/* Side Menu */
+/* Navigation Links (for larger screens) */
+.navbar ul {
+    list-style: none;
+    display: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #00A3FF;
+    font-weight: 600;
+}
+
+/* Side Menu (for mobile) */
 .side-menu {
     position: fixed;
     top: 0;
@@ -47,7 +65,7 @@ body {
     width: 250px;
     height: 100%;
     background-color: white;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     transition: right 0.3s ease;
     z-index: 999;
 }
@@ -113,8 +131,22 @@ body {
     border-radius: 10px;
 }
 
+/* Laptop/Desktop View */
 @media(min-width: 768px) {
     .menu-icon {
         display: none;
+    }
+
+    .navbar ul {
+        display: flex;
+    }
+
+    .side-menu {
+        display: none; /* Hide side menu on large screens */
+    }
+
+    .navbar ul li a {
+        color: #00A3FF;
+        font-weight: 600;
     }
 }
