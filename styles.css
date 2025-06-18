@@ -1,0 +1,92 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #56CCF2; /* Light blue */
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    color: #00A3FF;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+}
+
+.nav-links {
+    display: none; /* You can add functionality later */
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.hero h2 {
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    background-color: #00C853;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.image-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.image-section img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+@media(min-width: 768px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+    }
+
+    .nav-links li {
+        margin-left: 20px;
+    }
+}
