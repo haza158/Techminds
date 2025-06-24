@@ -17,6 +17,23 @@ function closeMenu() {
     menuIcon.style.display = 'block'; // Show hamburger
     closeIcon.style.display = 'none'; // Hide close icon
 }
+
+/* document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (name && email && message) {
+        document.getElementById('formStatus').textContent = "Thank you for your message!";
+        
+        this.reset();
+    } else {
+        document.getElementById('formStatus').textContent = "Please fill in all fields.";
+    }
+});
+*/
 //Animation for Stats-Homepage
 // Counter Animation
 function animateCount(el, target) {
