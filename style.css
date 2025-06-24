@@ -390,3 +390,97 @@ header h1 {
       margin: 10px;
     }
 } 
+/* Our Story Section */
+.our-story {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.our-story h2 {
+    color: #32CD32; /* Light Green */
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.story-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.story-text {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
+    color: #333;
+}
+
+.story-image img {
+    flex: 1;
+    min-width: 300px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Stats Section */
+.stats-section {
+    background-color: #eaf6ff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 1rem;
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+    margin: 1rem;
+}
+
+.stat h3 {
+    color: #00C853;
+    font-size: 2.5rem;
+}
+
+.stat p {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Global Reach Section */
+.global-reach {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.global-reach h2 {
+    color: #00C853;
+    margin-bottom: 1rem;
+}
+
+.global-reach img {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+/* Impact Section */
+.impact-section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.impact-section h2 {
+    color: #00C853;
+    margin-bottom: 1rem;
+}
+
+.impact-section p {
+    max-width: 800px;
+    margin: auto;
+    color: #333;
+    font-size: 1rem;
+}
