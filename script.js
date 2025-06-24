@@ -1,15 +1,21 @@
-function toggleMenu() {
+function openMenu() {
     const menu = document.querySelector('nav ul');
-    const icon = document.getElementById('menu-icon');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
 
-    menu.classList.toggle('show');
+    menu.classList.add('show');
+    menuIcon.style.display = 'none'; // Hide hamburger
+    closeIcon.style.display = 'block'; // Show close icon
+}
 
-    // Change icon based on menu state
-    if (menu.classList.contains('show')) {
-        icon.innerHTML = '&#10005;'; // Close icon (×)
-    } else {
-        icon.innerHTML = '&#9776;'; // Hamburger icon (≡)
-    }
+function closeMenu() {
+    const menu = document.querySelector('nav ul');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    menu.classList.remove('show');
+    menuIcon.style.display = 'block'; // Show hamburger
+    closeIcon.style.display = 'none'; // Hide close icon
 }
 
 document.getElementById('contactForm').addEventListener('submit', function(e) {
