@@ -427,7 +427,6 @@ header h1 {
 
 /* Stats Section */
 .stats-section {
-    background-color: #eaf6ff;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -438,6 +437,9 @@ header h1 {
 .stat {
     text-align: center;
     margin: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .stat h3 {
@@ -448,6 +450,11 @@ header h1 {
 .stat p {
     color: #333;
     font-weight: 600;
+}
+
+.stat.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Global Reach Section */
