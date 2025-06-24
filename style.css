@@ -390,6 +390,7 @@ header h1 {
       margin: 10px;
     }
 } 
+
 /* Our Story Section */
 .our-story {
     padding: 2rem 1rem;
@@ -491,7 +492,7 @@ header h1 {
     color: #333;
     font-size: 1rem;
 }
-.menu-icon {
+.menu-icon, .close-icon {
     font-size: 30px;
     cursor: pointer;
     display: none; /* Hidden on desktop */
@@ -499,8 +500,23 @@ header h1 {
 }
 
 @media (max-width: 768px) {
+    .menu-icon, .close-icon {
+        display: block;
+    }
+
     .menu-icon {
-        display: block; /* Show on mobile */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+    }
+
+    .close-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+        display: none; /* Close icon hidden by default */
     }
 
     nav ul {
@@ -515,6 +531,7 @@ header h1 {
         padding: 60px 20px;
         transition: right 0.3s ease;
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        z-index: 999;
     }
 
     nav ul.show {
