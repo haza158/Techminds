@@ -1,6 +1,15 @@
-function openMenu() {
+function toggleMenu() {
     const menu = document.querySelector('nav ul');
+    const icon = document.getElementById('menu-icon');
+
     menu.classList.toggle('show');
+
+    // Change icon based on menu state
+    if (menu.classList.contains('show')) {
+        icon.innerHTML = '&#10005;'; // Close icon (×)
+    } else {
+        icon.innerHTML = '&#9776;'; // Hamburger icon (≡)
+    }
 }
 
 document.getElementById('contactForm').addEventListener('submit', function(e) {
