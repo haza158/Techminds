@@ -96,16 +96,6 @@ nav ul li a.active {
   max-width: 500px;
 }
 
-.cta-button {
-  background-color: #00c853;
-  color: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: 600;
-  border: none;
-}
-
 .hero-image img {
   width: 350px;
   border-radius: 10px;
