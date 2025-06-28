@@ -317,6 +317,17 @@ header h1 {
   border: 0;
 }
 
+/*Programs Page styling*/
+#programs-page{
+  background-color: darkblue;
+  padding-left: 25em;
+  padding-right: 25em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  text-align: center;
+
+}
+
 @media (max-width: 480px) {
     .contact-container h1 {
         font-size: 1.5rem;
