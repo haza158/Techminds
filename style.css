@@ -318,15 +318,25 @@ header h1 {
 }
 
 /*Programs Page styling*/
-#programs-page{
-  background-color: darkblue;
-  padding-left: 25em;
-  padding-right: 25em;
-  padding-top: 5em;
-  padding-bottom: 5em;
-  text-align: center;
-
+.program-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
 }
+.program-box{
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin:2rem;
+  background-color: #2874a6; /* Dark Blue Box */
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+}
+
 
 @media (max-width: 480px) {
     .contact-container h1 {
