@@ -198,12 +198,22 @@ nav ul li a.active {
 }
 
 .team-photo {
-  width: 150px;
-  height: 200px;
+  width: 100%;
+  max-width: 300px;
+  height: 400px;
   object-fit: cover;
-  border-radius: 0%;
-  margin-bottom: 1rem;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 1rem auto;
 }
+
+@media (max-width: 500px) {
+  .team-photo {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
 
 .card h3 {
   font-size: 1.2rem;
