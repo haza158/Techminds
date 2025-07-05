@@ -6,14 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechMinds</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        //Animation for Stats-Homepage
+        // Counter Animation
+        function animateCount(el, target) {
+            let count = 0;
+            const speed = 200; // lower = faster
+            const increment = target / speed;
 
+            const updateCount = () => {
+                count += increment;
+                if (count < target) {
+                    el.textContent = Math.ceil(count);
+                    requestAnimationFrame(updateCount);
+                } else {
+                    el.textContent = target;
+                }
+            };
+
+            updateCount();
+        }
+
+        // Scroll Detection
+        let statsAnimated = false;
+        window.addEventListener('scroll', () => {
+            const statsSection = document.getElementById('stats');
+            const statsPosition = statsSection.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight;
+
+            if (statsPosition < screenPosition && !statsAnimated) {
+                statsAnimated = true;
+
+                const stats = document.querySelectorAll('.stat');
+                stats.forEach((stat, index) => {
+                    setTimeout(() => {
+                        stat.classList.add('show');
+                        const countEl = stat.querySelector('.count');
+                        const target = +countEl.getAttribute('data-target');
+                        animateCount(countEl, target);
+                    }, index * 300); // Stagger delay
+                });
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</head>
 <body>
     <nav>
         <div class="logo">
             <img src="logo.jpg" alt="TechMinds Logo">
         </div>
-        <div class="menu-icon" onclick="openMenu()">&#9776;</div>
+        <!-- Hamburger Icon -->
+        <div class="menu-icon" id="menu-icon" onclick="openMenu()">&#9776;</div>
+        <!-- Close Icon (Initially Hidden) -->
+        <div class="close-icon" id="close-icon" onclick="closeMenu()">&times;</div>
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -22,18 +69,91 @@
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
+    <!-- Herosection -->
     <section class="hero">
         <div class="hero-box">
             <div class="hero-text">
                 <h2>Welcome to Techminds!</h2>
-                <p>Empowering teens to connect, learn, and make a difference.<br> Join a vibrant community where your voice matters and your journey is celebrated!</p>
-                <a href="#" class="cta-button">Get Started</a>
+                <p>Where passion meets purpose, and innovation becomes accessible to all. We are an international organization dedicated to igniting curiosity and building deep understanding in electrical sciences for students across the globe. 
+                Whether you’re from a bustling city or a quiet village, TechMinds brings you closer to the wonders of electricity, physics, and electrical engineering—not as a subject to fear, but as a wonderful  universe to explore.</p>
             </div>
             <div class="hero-image">
                 <img src="lightbulb.jpg" alt="Idea Image">
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
+    <!-- Our Story Section -->
+    <section class="our-story">
+        <h2>Our Mission</h2>
+        <div class="story-content">
+            <div class="story-text">
+                <p>At TechMinds, our goal is to make electrical science hands-on, exciting, and open to everyone—especially keen, passionate students from different communities around the world. Our mission is to break down the barriers—emotional, educational, and financial—that prevent students from embracing electrical science. 
+                    We provide immersive, innovative learning experiences that transform complex concepts into fun, understandable, and exciting challenges. We dream of a world where every student, no matter their background, can truly enjoy learning about electrical sciences, grow their skills, and become future engineers, creators, and problem-solvers. 
+                    We believe science isn’t just about getting good grades or jobs—it’s about understanding how the world works and finding joy in learning. That belief drives us to make learning meaningful, fun, and something that stays with you for life. </p>
+            </div>
+            <div class="story-image">
+                <img src="founder.jpg" alt="Founder Image">
+            </div>
+        </div>
+    </section>
+    <!-- Stats Section -->
+    <section class="stats-section" id="stats">
+        <div class="stat" id="stat1">
+            <h3 class="count" data-target="3286">0</h3>
+            <p>Volunteers</p>
+        </div>
+        <div class="stat" id="stat2">
+            <h3 class="count" data-target="28">0</h3>
+            <p>Programs</p>
+        </div>
+        <div class="stat" id="stat3">
+            <h3 class="count" data-target="2460">0</h3>
+            <p>Learners Joined</p>
+        </div>
+    </section>
+    <!-- Global Reach Section -->
+    <section class="global-reach">
+        <h2>We have learners from all around the world</h2>
+        <img src="Untitled design (2).png" alt="Global Map">
+    </section>
+    <!-- Impact Section -->
+    <section class="impact-section">
+        <h2>Impact</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Learner feedback will be added soon.</p>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="logo.jpg" alt="TechMinds Logo">
+            </div>
+            <!-- Social Icons -->
+            <!-- Social Icons -->
+            <div class="footer-socials">
+                <a href="mailto:techmindsorg@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/company/techminds7/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <!-- Footer Links Sections -->
+            <div class="footer-links">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Programs</h4>
+                <ul>
+                    <li><a href="programs.html">Our Programs</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="https://www.linkedin.com" target="_blank">Media (LinkedIn)</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+    </div>
+</footer>
 </body>
 </html>

@@ -12,15 +12,74 @@
         <div class="logo">
             <img src="logo.jpg" alt="TechMinds Logo">
         </div>
-        <div class="menu-icon" onclick="openMenu()">&#9776;</div>
+        <!-- Hamburger Icon -->
+        <div class="menu-icon" id="menu-icon" onclick="openMenu()">&#9776;</div>
+        <!-- Close Icon (Initially Hidden) -->
+        <div class="close-icon" id="close-icon" onclick="closeMenu()">&times;</div>
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="programs.html">Our Programs</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
+    <header>
+        <h1> Image Gallery</h1>
+    </header>
+
+    <section class="gallery">
+        <figure class="gallery-item">
+            <img src="./logo.jpg" alt="image 1" />
+            <figcaption>Topic 1</figcaption>
+        </figure>
+        <figure class="gallery-item">
+            <img src="./lightbulb.jpg" alt="image 2" />
+            <figcaption>Topic 2</figcaption>
+        </figure>
+        <figure class="gallery-item">
+            <img src="./logo.jpg" alt="image 3" />
+            <figcaption>Topic 3</figcaption>
+        </figure>
+        <figure class="gallery-item">
+            <img src="./lightbulb.jpg" alt="image 4" />
+            <figcaption>Topic 4</figcaption>
+        </figure>
+    </section>
     <script src="script.js"></script>
+    <footer>
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="logo.jpg" alt="TechMinds Logo">
+            </div>
+            <!-- Social Icons -->
+            <!-- Social Icons -->
+            <div class="footer-socials">
+                <a href="mailto:techmindsorg@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/company/techminds7/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <!-- Footer Links Sections -->
+            <div class="footer-links">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Programs</h4>
+                <ul>
+                    <li><a href="programs.html">Our Programs</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="https://www.linkedin.com" target="_blank">Media (LinkedIn)</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
