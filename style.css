@@ -172,6 +172,7 @@ nav ul li a.active {
   font-size: 1rem;
   color: #333;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .ceo-name {
@@ -198,16 +199,16 @@ nav ul li a.active {
   background-color: white;
   border-radius: 15px;
   padding: 1.5rem;
-  width: 250px;
+  width: 350px; /* wider for better text fit */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 .team-photo {
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 0%;
   margin-bottom: 1rem;
 }
 
@@ -223,6 +224,20 @@ nav ul li a.active {
 }
 
 .bio {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #555;
+  text-align: justify;
+  line-height: 1.6;
+  word-break: normal;      
+  white-space: normal;     
+  margin-top: 0.5rem;
+  letter-spacing: 0.02em;
+  hyphens: auto;            
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
 }
