@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Us</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <nav>
@@ -17,12 +18,12 @@
     <div class="close-icon" id="close-icon" onclick="closeMenu()">&times;</div>
     <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
         <li><a href="programs.html">Our Programs</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html" class="active">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
     </ul>
-</nav>
+  </nav>
 
   <section class="about-section">
     <h1>About Us</h1>
@@ -38,16 +39,15 @@
     <h2>Meet the Team</h2>
     <div class="team-cards">
       <div class="card">
-        <img src="pic2.jpg" alt="CEO Photo" class="team-photo"/>
+        <img src="assets/pic2.jpg" alt="CEO Photo" class="team-photo"/>
         <h3>Ananya Das</h3>
-        <p class="role">Chief Executive Officer</p>
         <p class="role">Founder and CEO</p>
         <p class="bio">
           Hi, I’m Ananya Das and I’m driving force behind TechMinds— a student-led initiative born from her deep passion for electrical engineering and a vision to make it approachable and exciting for students everywhere. I bring together strong leadership, teamwork, problem-solving, process-building, and research skills, along with a solid grounding in electrical science and physics. I am deeply passionate about electrical engineering, actively exploring research in the field. I'm deeply passionate about making electrical engineering accessible to those who have never had the chance to explore it clearly and confidently. Through TechMinds, I am committed to helping others discover this field and building a vibrant community of enthusiastic learners and future innovators. With a firm belief in the power of STEM, I am determined to empower young minds for electrical engineering by making them more curious about electrical engineering and making its concepts clearer and more accessible for them at TechMinds. 
         </p>
       </div>
       <div class="card">
-        <img src="pic1.png" alt="COO Photo" class="team-photo" />
+        <img src="assets/pic1.png" alt="COO Photo" class="team-photo" />
         <h3>Meena</h3>
         <p class="role">COO</p>
         <p class="bio">
@@ -56,6 +56,42 @@
       </div>
     </div>
   </section>
+
+  <footer>
+    <div class="footer-container">
+      <!-- Logo Section -->
+      <div class="footer-logo">
+        <img src="logo.jpg" alt="TechMinds Logo">
+      </div>
+
+      <!-- Social Icons -->
+      <div class="footer-socials">
+        <a href="mailto:techmindsorg@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/company/techminds7/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+
+      <!-- Footer Links Sections -->
+      <div class="footer-links">
+        <h4>About</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="programs.html">Our Programs</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="https://www.linkedin.com" target="_blank">Media (LinkedIn)</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
