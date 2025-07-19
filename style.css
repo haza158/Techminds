@@ -12,7 +12,7 @@
   --primary-color: #00c853;
 }
 body {
-  background-color: #c6e2f7;
+  background-color:  #94beda;
   color: #333;
 }
 
@@ -77,7 +77,7 @@ nav ul li a.active {
   justify-content: space-around;
   align-items: center;
   padding: 2rem;
-  background-color: #2874a6; /* Dark Blue Box */
+  background-color: #2b7bda; /* Dark Blue Box */
   border-radius: 10px;
   width: 90%;
   max-width: 1200px;
@@ -356,7 +356,7 @@ header h1 {
   align-items: center;
   padding: 2rem;
   margin:2rem; 
-  background-color: #2874a6;
+  background-color: #2b7bda;
   border-radius: 10px;
   text-align: center;
 }
@@ -394,8 +394,8 @@ header h1 {
 }
         
 .program-details {
-  text-align: justify;
-  color: white;
+  text-align: center;
+  color: #2b7bda;
 }
 
 .program-details ul {
@@ -405,13 +405,12 @@ header h1 {
 }
 
 .program-details li {
-  margin: 0.8rem 0;
-  padding-left: 1.5rem;
-  position: relative;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  background-color: #e3effb;
 }
 
 .program-details li:before {
-  content: "•";
   color: white;
   font-size: 1.2rem;
   position: absolute;
@@ -437,6 +436,9 @@ header h1 {
     padding: 2rem 1rem;
     max-width: 1200px;
     margin: auto;
+    background-color: #e3effb;
+    border-radius: 10px;
+
 }
 
 .our-story h2 {
@@ -581,7 +583,7 @@ header h1 {
 }
 /* Footer Base Style */
 footer {
-    background-color: #2874a6; /* Light Green */
+    background-color: #2b7bda; /* Light Green */
     color: white;
     padding: 2rem 1rem;
 }
