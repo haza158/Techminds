@@ -349,17 +349,73 @@ header h1 {
   justify-content: center;
   align-items: center;
   padding: 2rem 1rem;
+  margin: 6rem 1rem;;
 }
 .program-box{
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  margin:2rem;
-  background-color: #2874a6; /* Dark Blue Box */
+  margin:2rem; 
+  background-color: #2874a6;
   border-radius: 10px;
-  width: 90%;
-  max-width: 1200px;
   text-align: center;
+}
+
+.expand-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 1rem 0;
+  transition: all 0.3s ease;
+}
+        
+.expand-icon {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease;
+  color: white;
+}
+
+.expand-text {
+  color: white;
+  font-size: 1rem;
+}
+
+.expanded-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.expanded-content.show {
+  max-height: 300px; 
+}
+        
+.program-details {
+  text-align: justify;
+  color: white;
+}
+
+.program-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.program-details li {
+  margin: 0.8rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.program-details li:before {
+  content: "•";
+  color: white;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
 }
 
 
