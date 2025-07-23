@@ -148,15 +148,12 @@ nav ul li a.active {
 }
 
 .about-section {
-  background-color: #2b7bda;
   padding: 3rem 2rem;
   text-align: center;
-  color: white;
-
 }
 
 .about-section h1 {
- color: white;
+  color: #00c853;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
@@ -165,7 +162,7 @@ nav ul li a.active {
   max-width: 900px;
   margin: 0 auto;
   font-size: 1rem;
-  color: white;
+  color: #333;
   line-height: 1.6;
   text-align: justify;
 }
@@ -173,11 +170,11 @@ nav ul li a.active {
 .ceo-name {
   margin-top: 1rem;
   font-style: italic;
-  color: white;
+  color: #555;
 }
 
 .about-section h2 {
- color: white;
+  color: #00c853;
   margin-top: 2.5rem;
   font-size: 2rem;
 }
