@@ -355,7 +355,7 @@ header h1 {
   align-items: center;
   padding: 2rem;
   margin:2rem; 
-  background-color: #2b7bda;
+  background-color: white;
   border-radius: 10px;
   text-align: center;
 }
@@ -374,11 +374,11 @@ header h1 {
   font-weight: bold;
   margin-right: 0.5rem;
   transition: transform 0.3s ease;
-  color: white;
+  color: #2E86AB;
 }
 
 .expand-text {
-  color: white;
+  color: #2E86AB;
   font-size: 1rem;
 }
 
@@ -394,7 +394,9 @@ header h1 {
         
 .program-details {
   text-align: center;
-  color: #2b7bda;
+  color: #2E86AB;
+  font-weight: bold;
+  
 }
 
 .program-details ul {
@@ -406,7 +408,9 @@ header h1 {
 .program-details li {
   margin: 1rem 0;
   padding: 1rem 0;
-  background-color: #e3effb;
+  background-color: #E3F2FD;
+  border-radius: 10px;
+
 }
 
 .program-details li:before {

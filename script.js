@@ -23,12 +23,12 @@ function toggleProgram() {
     const expandIcon = document.getElementById('expandIcon');
     
     if (expandedContent.classList.contains('show')) {
-        expandIcon.textContent = '>';
+        expandIcon.textContent = '▶';
         expandedContent.classList.remove('show');
         expandIcon.classList.remove('expanded');
 
     } else {
-        expandIcon.textContent = 'v'; 
+        expandIcon.textContent = '▼'; 
         expandedContent.classList.add('show');
         expandIcon.classList.add('expanded');
        
