@@ -273,6 +273,7 @@ header h1 {
 
 .gallery-item img {
     width: 100%;
+    
     height: auto;
     display: block;
     transition: transform 0.3s ease;
