@@ -353,8 +353,8 @@ header h1 {
 .program-box{
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  margin:2rem; 
+  padding: 2rem 30%;
+  /* margin:2rem ;  */
   background-color: white;
   border-radius: 10px;
   text-align: center;
@@ -384,7 +384,7 @@ header h1 {
 
 .expanded-content {
   max-height: 0;
-  overflow: hidden;
+  overflow: auto;
   transition: max-height 0.4s ease-out;
 }
 
@@ -401,7 +401,7 @@ header h1 {
 
 .program-details ul {
   list-style: none;
-  padding: 0;
+  padding: 20px;
   margin: 0;
 }
 
