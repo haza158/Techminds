@@ -492,7 +492,7 @@ header h1 {
 }
 
 .stat h3 {
-    color: #00C853;
+    color: #32cd32;
     font-size: 2.5rem;
 }
 
@@ -513,7 +513,7 @@ header h1 {
 }
 
 .global-reach h2 {
-    color: #00C853;
+    color: #32cd32;
     margin-bottom: 1rem;
 }
 
@@ -698,6 +698,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
