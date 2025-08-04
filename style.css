@@ -524,8 +524,9 @@ header h1 {
 }
 
 /* Impact Section */
-.impact-section {
-    padding: 2rem 1rem;
+.testimonials {
+    padding: 3rem 2rem;
+    background: #f1faee;
     text-align: center;
 }
 
@@ -533,12 +534,19 @@ header h1 {
     color: #00C853;
     margin-bottom: 1rem;
 }
-
-.impact-section p {
-    max-width: 800px;
-    margin: auto;
-    color: #333;
-    font-size: 1rem;
+.testimonial{
+    background: #ffe5ec;
+    padding: 1rem;
+    border-radius: 12px;
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.testimonial-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 .menu-icon, .close-icon {
     font-size: 30px;
@@ -662,3 +670,4 @@ footer {
         margin: 1rem 0;
     }
 }
+
