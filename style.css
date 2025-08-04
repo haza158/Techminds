@@ -524,7 +524,12 @@ header h1 {
 }
 
 /* Impact Section */
-/* Impact Section */
+.testimonials-wrapper {
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
 .testimonials {
     padding: 3rem 2rem 5rem; /* extra bottom padding to avoid footer overlap */
     background-color: #d9eefe; /* soft blue to match your theme */
@@ -700,6 +705,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
