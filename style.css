@@ -526,7 +526,7 @@ header h1 {
 /* Impact Section */
 /* Impact Section */
 .testimonials {
-    padding: 3rem 1rem 5rem; /* extra bottom padding to avoid footer overlap */
+    padding: 3rem 2rem 5rem; /* extra bottom padding to avoid footer overlap */
     background-color: #d9eefe; /* soft blue to match your theme */
     border-radius: 10px;
     display: flex;
@@ -698,6 +698,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
