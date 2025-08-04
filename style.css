@@ -9,7 +9,7 @@
 }
 
 :root{
-  --primary-color: #00c853;
+  --primary-color: #239423;
 }
 body {
   background-color:  #94beda;
@@ -84,7 +84,7 @@ nav ul li a.active {
 }
 
 .hero-text h2 {
-  color: #00c853; /* Bright Green */
+  color: #239423; /* Bright Green */
   font-size: 28px;
   margin-bottom: 1rem;
 }
@@ -153,7 +153,7 @@ nav ul li a.active {
 }
 
 .about-section h1 {
-  color: #00c853;
+  color: #239423;
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
@@ -174,7 +174,7 @@ nav ul li a.active {
 }
 
 .about-section h2 {
-  color: #00c853;
+  color: #239423;
   margin-top: 2.5rem;
   font-size: 2rem;
 }
@@ -533,8 +533,9 @@ header h1 {
 }
 
 .testimonials h2 {
-    color: #00C853;
-    margin-bottom: 1rem;
+    color: #239423; /* Light Green */
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 .testimonial{
     background: #e5ffe5;
@@ -672,6 +673,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
