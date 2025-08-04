@@ -546,9 +546,11 @@ header h1 {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    width: 100%;
-    max-width: 800px;
     align-items: center;
+    width: 100%;
+    max-width: 700px; /* slightly reduced to give extra breathing room */
+    padding: 0 1rem; /* ensures spacing from edge even on small screens */
+    box-sizing: border-box;
 }
 
 .testimonial {
@@ -698,6 +700,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
