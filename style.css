@@ -524,13 +524,15 @@ header h1 {
 }
 
 /* Impact Section */
+/* Impact Section */
 .testimonials {
-    padding: 3rem 1rem;
-    background-color: #e3effb;
+    padding: 3rem 1rem 5rem; /* extra bottom padding to avoid footer overlap */
+    background-color: #d9eefe; /* soft blue to match your theme */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 3rem; /* extra space before the footer */
 }
 
 .testimonials h2 {
@@ -557,8 +559,8 @@ header h1 {
     font-size: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     text-align: left;
-    transition: transform 0.3s ease;
     line-height: 1.6;
+    transition: transform 0.3s ease;
 }
 
 .testimonial:hover {
@@ -566,7 +568,7 @@ header h1 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Optional: Responsive tweaks */
+/* Responsive */
 @media (max-width: 600px) {
     .testimonial {
         font-size: 0.95rem;
@@ -696,6 +698,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
