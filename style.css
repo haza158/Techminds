@@ -84,7 +84,7 @@ nav ul li a.active {
 }
 
 .hero-text h2 {
-  color: #239423; /* Bright Green */
+  color: #32CD32; /* Bright Green */
   font-size: 28px;
   margin-bottom: 1rem;
 }
@@ -696,6 +696,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
