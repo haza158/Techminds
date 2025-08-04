@@ -526,11 +526,10 @@ header h1 {
 /* Impact Section */
 .testimonials {
     padding: 3rem 2rem;
-    background: #f1faee;
     text-align: center;
 }
 
-.impact-section h2 {
+.testimonials h2 {
     color: #00C853;
     margin-bottom: 1rem;
 }
@@ -670,4 +669,5 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
