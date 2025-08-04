@@ -525,8 +525,11 @@ header h1 {
 
 /* Impact Section */
 .testimonials {
-    padding: 3rem 2rem;
-    text-align: center;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #e3effb;
+    border-radius: 10px;
 }
 
 .testimonials h2 {
@@ -534,7 +537,7 @@ header h1 {
     margin-bottom: 1rem;
 }
 .testimonial{
-    background: #ffe5ec;
+    background: #e5ffe5;
     padding: 1rem;
     border-radius: 12px;
     font-style: italic;
@@ -669,5 +672,6 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
