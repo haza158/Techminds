@@ -355,8 +355,7 @@ header h1 {
 .program-box{
   justify-content: center;
   align-items: center;
-  padding: 2rem 30%;
-  /* margin:2rem ;  */
+  padding: 2rem 20%;
   background-color: white;
   border-radius: 10px;
   text-align: center;
@@ -391,7 +390,7 @@ header h1 {
 }
 
 .expanded-content.show {
-  max-height: 300px; 
+  max-height: 700px; 
 }
         
 .program-details {
@@ -403,16 +402,15 @@ header h1 {
 
 .program-details ul {
   list-style: none;
-  padding: 20px;
   margin: 0;
 }
 
 .program-details li {
   margin: 1rem 0;
-  padding: 1rem 0;
+  padding: 4rem;
   background-color: #E3F2FD;
   border-radius: 10px;
-
+  width: 700px;
 }
 
 .program-details li:before {
@@ -434,7 +432,35 @@ header h1 {
     .contact-container{
       margin: 10px;
     }
+
+    .program-details li {
+      margin: 1rem 0;
+      padding: 4rem;
+      background-color: #E3F2FD;
+      border-radius: 10px;
+      width: 200px;
+    }
 } 
+@media (max-width: 1200px) and (min-width:1000px) {
+    .program-details li {
+      width: 600px;
+    }
+}
+@media (max-width: 1000px) and (min-width:800px) {
+    .program-details li {
+      width: 500px;
+    }
+}
+@media (max-width: 800px) and (min-width:630px) {
+    .program-details li {
+      width: 400px;
+    }
+}
+@media (max-width: 630px) and (min-width:480px) {
+    .program-details li {
+      width: 300px;
+    }
+}
 
 /* Our Story Section */
 .our-story {
