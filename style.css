@@ -263,7 +263,7 @@ header h1 {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 20px;
 }
 
@@ -273,7 +273,7 @@ header h1 {
     overflow: hidden;
     box-shadow: 0 3px 8px var(--primary-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 30px;
+    margin: 20px;
 }
 
 .gallery-item img {
