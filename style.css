@@ -548,9 +548,16 @@ header h1 {
 }
 
 .global-reach img {
-    width: 100%;
+    width: 300%;
     max-width: 1000px;
     border-radius: 10px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /* Impact Section */
@@ -735,6 +742,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
