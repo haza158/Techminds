@@ -191,7 +191,7 @@ nav ul li a.active {
   background-color: white;
   border-radius: 15px;
   padding: 1.5rem;
-  width: 350px; /* wider for better text fit */
+  width: 500px; /* wider for better text fit */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -204,7 +204,7 @@ nav ul li a.active {
 .team-photo {
   width: 100%;
   max-width: 300px;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
   border-radius: 10px;
   display: block;
