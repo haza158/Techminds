@@ -548,8 +548,8 @@ header h1 {
 }
 
 .global-reach img {
-    width: 90%;
-    max-width: 900px;
+    width: 100%;
+    max-width: 1000px;
     border-radius: 10px;
 }
 
@@ -735,6 +735,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
