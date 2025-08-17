@@ -187,7 +187,6 @@ nav ul li a.active {
   flex-wrap: wrap;
   margin-top: 2rem;
   justify-content: space-around;  /* spreads them evenly */
-  gap: 3rem;                      /* increase spacing */
   flex-wrap: wrap;
   margin: 0 auto 1rem auto;
 }
@@ -195,7 +194,7 @@ nav ul li a.active {
 .card {
   background-color: white;
   border-radius: 15px;
-  padding: 1.5rem;
+  padding: 2.5rem;
   width: 500px; /* wider for better text fit */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -796,6 +795,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
