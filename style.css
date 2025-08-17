@@ -186,6 +186,10 @@ nav ul li a.active {
   gap: 2rem;
   flex-wrap: wrap;
   margin-top: 2rem;
+  justify-content: space-around;  /* spreads them evenly */
+  gap: 3rem;                      /* increase spacing */
+  flex-wrap: wrap;
+  margin: 0 auto 1rem auto;
 }
 
 .card {
@@ -209,11 +213,8 @@ nav ul li a.active {
   object-fit: contain;          /* fills box, crops overflow */
   object-position: center; /* try center first */
   border-radius: 10px;
-  display: flex;
-  justify-content: space-around;  /* spreads them evenly */
-  gap: 3rem;                      /* increase spacing */
-  flex-wrap: wrap;
-  margin: 0 auto 1rem auto;
+  display: block;
+  margin: 0 auto 1rem auto; 
 }
 
 @media (max-width: 500px) {
