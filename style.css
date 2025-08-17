@@ -265,7 +265,7 @@ header h1 {
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 per row */
-    gap: 30px;
+    gap: 20px;
     justify-items: center;
 }
 
@@ -281,7 +281,7 @@ header h1 {
 }
 
 .gallery-item img {
-    width: 100%;
+    width: 200%;
     height: auto;
     display: block;
 }
@@ -791,6 +791,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
