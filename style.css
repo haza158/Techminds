@@ -576,6 +576,8 @@ header h1 {
   border-radius: 10px;
   display: block;
   margin: 0 auto;
+  object-fit: contain; 
+  object-position: center left; /* biases it slightly left */
 }
 
 /* Tablet view */
@@ -782,6 +784,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
