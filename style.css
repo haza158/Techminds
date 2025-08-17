@@ -204,8 +204,9 @@ nav ul li a.active {
 .team-photo {
   width: 100%;
   max-width: 300px;
-  height: auto;   /* ✅ keep natural aspect ratio */
-  object-fit: contain; /* ✅ no cropping or blur */
+  height: auto;                /* keeps proportions */
+  object-fit: cover;           /* fills box nicely */
+  object-position: top center; /* keeps the head in frame */
   border-radius: 10px;
   display: block;
   margin: 0 auto 1rem auto;
@@ -790,6 +791,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
