@@ -570,16 +570,16 @@ header h1 {
   margin-right: auto;
 }
 
-.map-container {
-  display: flex;
-  justify-content: center; /* centers the image */
-}
-
-.map-container img {
+.global-reach img {
   width: 90%;
   max-width: 1400px;
   border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: center left; /* biases it slightly left */
 }
+
 /* Impact Section */
 .testimonials-wrapper {
     padding: 0 2rem;
@@ -770,6 +770,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
