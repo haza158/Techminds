@@ -159,9 +159,9 @@ nav ul li a.active {
 }
 
 .about-description {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 16px;
   color: #333;
   line-height: 1.6;
   text-align: justify;
@@ -170,7 +170,7 @@ nav ul li a.active {
 .ceo-name {
   margin-top: 1rem;
   font-style: italic;
-  font-size: 2.1rem;
+  font-size: 2rem;
   color: #555;
 }
 
@@ -184,17 +184,12 @@ nav ul li a.active {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-  justify-content: space-around;  /* spreads them evenly */
-  flex-wrap: wrap;
-  margin: 0 auto 1rem auto;
 }
 
 .card {
   background-color: white;
   border-radius: 15px;
-  padding: 2.5rem;
+  padding: 3rem;
   width: 500px; /* wider for better text fit */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -795,6 +790,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
