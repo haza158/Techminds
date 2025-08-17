@@ -582,6 +582,7 @@ header h1 {
   max-width: 1200px;      /* bump up max width */
   border-radius: 10px;
   display: block;
+  margin-left: 10px;
   margin: 0 auto;
   object-fit: contain;
   object-position: center; /* center align instead of left */
@@ -791,6 +792,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
