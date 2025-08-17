@@ -280,32 +280,46 @@ header h1 {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    gap: 30px;  /* more breathing space between them */
+    justify-items: center; /* centers items */
 }
 
 .gallery-item {
+    position: relative; /* needed for overlay positioning */
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 3px 8px var(--primary-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 20px;
+    width: 90%;
+    max-width: 600px;
 }
 
 .gallery-item img {
     width: 100%;
-    object-fit: contain;
     height: auto;
     display: block;
     transition: transform 0.3s ease;
 }
 
 .gallery-item figcaption {
+    position: absolute;
+    bottom: 0; /* stick to bottom of image */
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+    color: #fff; /* white text */
+    font-size: 1rem;
     padding: 10px;
     text-align: center;
-    font-size: 1rem;
-    background-color: #f1f1f1;
+    opacity: 0; /* hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover figcaption {
+    opacity: 1; /* show caption when hovered */
 }
 
 .gallery-item:hover {
@@ -315,6 +329,17 @@ header h1 {
 
 .gallery-item img:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr; /* 1 image per row */
+  }
+
+  .gallery-item {
+    width: 95%;
+    max-width: none;
+  }
 }
 
 /* contact page designs*/
@@ -784,6 +809,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
