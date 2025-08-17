@@ -161,7 +161,7 @@ nav ul li a.active {
 .about-description {
   max-width: 900px;
   margin: 0 auto;
-  font-size: 15px;
+  font-size: 20px;
   color: #333;
   line-height: 1.6;
   text-align: justify;
@@ -170,7 +170,7 @@ nav ul li a.active {
 .ceo-name {
   margin-top: 1rem;
   font-style: italic;
-  font-size: 10px;
+  font-size: 3rem;
   color: #555;
 }
 
@@ -796,6 +796,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
