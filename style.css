@@ -184,11 +184,15 @@ nav ul li a.active {
 .team-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* instead of center */
-  gap: 2rem;
+  justify-content: center;  /* center all cards */
+  gap: 3rem;                /* more spacing between cards */
   margin: 3rem auto 0 auto;
-  max-width: 1200px;
-  padding: 0 1rem;
+  max-width: 1300px;        /* give a bit more total space */
+  padding: 0 2rem;
+}
+.team-cards .card {
+  flex: 1 1 45%;    /* instead of 48%, gives text more room */
+  max-width: 550px; /* allow a slightly wider card */
 }
 .team-cards .card:nth-child(1),
 .team-cards .card:nth-child(2) {
@@ -196,7 +200,7 @@ nav ul li a.active {
   max-width: 48%;
 }
 
-.team-cards .card:nth-child(3) {
+.team-cards .card:last-child {
   flex-basis: 100%;
   display: flex;
   justify-content: center;
@@ -206,9 +210,10 @@ nav ul li a.active {
   background-color: white;
   border-radius: 15px;
   padding: 3rem;
-  width: 500px; /* wider for better text fit */
+  width: 100%;              /* make responsive inside flex */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  word-wrap: break-word;    /* ensures long words don’t cut out */
 }
 
 .card-break {
@@ -814,6 +819,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
