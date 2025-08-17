@@ -204,9 +204,9 @@ nav ul li a.active {
 .team-photo {
   width: 100%;
   max-width: 300px;
-  height: 350px;              /* ✅ fixed height for all */
-  object-fit: cover;          /* fills box, crops overflow */
-  object-position: top center;/* keeps head visible */
+  height: 350px;              /* fixed height for uniformity */
+  object-fit: cover;          /* fills the box, may crop */
+  object-position: center top; /* keep face in view */
   border-radius: 10px;
   display: block;
   margin: 0 auto 1rem auto;
@@ -578,13 +578,13 @@ header h1 {
 }
 
 .global-reach img {
-  width: 80%;          /* desktop size */
-  max-width: 1100px;
+  width: 95%;             /* increase width closer to the text box below */
+  max-width: 1200px;      /* bump up max width */
   border-radius: 10px;
   display: block;
   margin: 0 auto;
-  object-fit: contain; 
-  object-position: center left; /* biases it slightly left */
+  object-fit: contain;
+  object-position: center; /* center align instead of left */
 }
 
 /* Tablet view */
@@ -791,6 +791,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
