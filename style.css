@@ -571,15 +571,27 @@ header h1 {
 }
 
 .global-reach img {
-  width: 90%;
-  max-width: 1400px;
+  width: 70%;          /* desktop size */
+  max-width: 1000px;
   border-radius: 10px;
   display: block;
   margin: 0 auto;
-  object-fit: contain;
-  object-position: center left; /* biases it slightly left */
 }
 
+/* Tablet view */
+@media (max-width: 1024px) {
+  .global-reach img {
+    width: 80%;         
+  }
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .global-reach img {
+    width: 95%;         
+    max-width: none;
+  }
+}
 /* Impact Section */
 .testimonials-wrapper {
     padding: 0 2rem;
@@ -770,6 +782,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
