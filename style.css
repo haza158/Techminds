@@ -205,8 +205,8 @@ nav ul li a.active {
   width: 100%;
   max-width: 300px;
   height: 350px;              /* keeps consistent size */
-  object-fit: cover;          /* fills box, crops overflow */
-  object-position: cover;/* try center first */
+  object-fit: contain;          /* fills box, crops overflow */
+  object-position: center; /* try center first */
   border-radius: 10px;
   display: block;
   margin: 0 auto 1rem auto;
@@ -791,6 +791,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
