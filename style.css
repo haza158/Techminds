@@ -184,6 +184,8 @@ nav ul li a.active {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .card {
@@ -790,6 +792,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
