@@ -184,9 +184,22 @@ nav ul li a.active {
 .team-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between; /* instead of center */
   gap: 2rem;
-  margin-top: 2rem;
+  margin: 3rem auto 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+.team-cards .card:nth-child(1),
+.team-cards .card:nth-child(2) {
+  flex: 1 1 48%;
+  max-width: 48%;
+}
+
+.team-cards .card:nth-child(3) {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
@@ -248,9 +261,18 @@ nav ul li a.active {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .card {
-    width: 90%;
+    width: 90% !important;
+    max-width: 90% !important;
+  }
+
+  .team-cards .card:nth-child(1),
+  .team-cards .card:nth-child(2),
+  .team-cards .card:nth-child(3) {
+    flex-basis: 100%;
+    justify-content: center;
   }
 }
+
 
 /*gallery section designs*/
 
@@ -793,6 +815,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
