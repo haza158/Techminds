@@ -26,23 +26,6 @@ nav {
   flex-wrap: wrap;
 }
 
-
-/* Blur Meena's Card */
-.card:nth-child(2) .team-photo {
-  filter: blur(6px);   /* Blur the photo */
-}
-
-.card:nth-child(2) h3 {
-  color: transparent;   /* Hide text */
-  text-shadow: 0 0 6px #555;  /* Blurred replacement effect */
-}
-
-.card:nth-child(2) .role {
-  color: transparent;
-  text-shadow: 0 0 6px #555;
-}
-
-
 .logo img {
   width: 60px;
   height: auto;
@@ -807,6 +790,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
