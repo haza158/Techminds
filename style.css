@@ -276,12 +276,12 @@ header h1 {
     overflow: hidden;
     box-shadow: 0 3px 8px var(--primary-color);
     margin: 20px;
-    width: 200%;  
-    max-width: 600px; /* control image size */
+    width: 95%;  
+    max-width: 400px; /* control image size */
 }
 
 .gallery-item img {
-    width: 200%;
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -791,6 +791,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
