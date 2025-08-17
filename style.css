@@ -161,7 +161,7 @@ nav ul li a.active {
 .about-description {
   max-width: 900px;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 15px;
   color: #333;
   line-height: 1.6;
   text-align: justify;
@@ -204,9 +204,9 @@ nav ul li a.active {
 .team-photo {
   width: 100%;
   max-width: 300px;
-  height: auto;                /* keeps proportions */
-  object-fit: cover;           /* fills box nicely */
-  object-position: top center; /* keeps the head in frame */
+  height: 350px;              /* ✅ fixed height for all */
+  object-fit: cover;          /* fills box, crops overflow */
+  object-position: top center;/* keeps head visible */
   border-radius: 10px;
   display: block;
   margin: 0 auto 1rem auto;
@@ -791,6 +791,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
