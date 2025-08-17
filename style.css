@@ -159,12 +159,13 @@ nav ul li a.active {
 }
 
 .about-description {
-  max-width: 1000px;
+  max-width: 1100px; /* increased width */
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 17px;   /* slightly larger font */
   color: #333;
-  line-height: 1.6;
+  line-height: 1.8;  /* more line spacing */
   text-align: justify;
+  padding: 0 1rem;
 }
 
 .ceo-name {
@@ -182,9 +183,9 @@ nav ul li a.active {
 
 .team-cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;
   margin-top: 2rem;
 }
 
@@ -792,6 +793,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
