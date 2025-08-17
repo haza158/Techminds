@@ -208,7 +208,10 @@ nav ul li a.active {
   object-fit: contain;          /* fills box, crops overflow */
   object-position: center; /* try center first */
   border-radius: 10px;
-  display: block;
+  display: flex;
+  justify-content: space-around;  /* spreads them evenly */
+  gap: 3rem;                      /* increase spacing */
+  flex-wrap: wrap;
   margin: 0 auto 1rem auto;
 }
 
@@ -791,6 +794,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
