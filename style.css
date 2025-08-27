@@ -269,7 +269,7 @@ nav ul li a.active {
   white-space: normal;     
   margin-top: 0.5rem;
   letter-spacing: 0.02em;
-  hyphens: auto;            
+  hyphens: none;             
 }
 
 /* Responsive adjustments */
@@ -829,6 +829,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
