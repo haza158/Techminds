@@ -191,7 +191,7 @@ nav ul li a.active {
   padding: 0 2rem;
 }
 .team-cards .card {
-  flex: 1 1 45%;    /* instead of 48%, gives text more room */
+  flex: 1 1 43%;    /* instead of 48%, gives text more room */
   max-width: 550px; /* allow a slightly wider card */
 }
 .team-cards .card:nth-child(1),
@@ -830,6 +830,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
