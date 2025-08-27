@@ -225,7 +225,7 @@ nav ul li a.active {
 .team-photo {
   width: 100%;
   max-width: 300px;
-  height: 400px;              /* keeps consistent size */       
+  height: 600px;              /* keeps consistent size */       
   object-fit: cover;
   border-radius: 10px;
   display: block;
@@ -820,6 +820,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
