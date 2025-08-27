@@ -243,7 +243,11 @@ nav ul li a.active {
 
 @media (max-width: 500px) {
   .team-photo {
-    max-width: 90%;
+    max-width: 100%;
+    height: auto;
+  }
+  .team-photo1 {
+    max-width: 100%;
     height: auto;
   }
 }
@@ -829,6 +833,7 @@ footer {
         margin: 1rem 0;
     }
 }
+
 
 
 
